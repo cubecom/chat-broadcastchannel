@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minichat con BroadcastChannel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chat-container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px 5px rgba(196, 196, 196, 0.328);
+            margin-bottom: 20px;
+        }
+        #message-input {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 50px;
+            margin-left: -10px;
+        }
+        #send-button {
+            background: black;
+            color: white;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        #send-button:hover {
+            background: white;
+            color: black;
+        }
+        .title{
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+        }
+        .wrapper {
+            width: 290px;
+            margin: auto;
+        }
+        .my-message {
+            background: #e0f2fe;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: end;
+            width: fit-content;
+            margin-left: auto;
+            margin-bottom: 10px;
+        }
+        .other-message {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 10px;
+            margin-right: auto;
+            width: fit-content;
+            margin-bottom: 10px;
+        }
+        .my-message p, .other-message p {
+            margin: 0;
+        }
+        .my-message span, .other-message span{
+            font-size: 10px;
+            color: #171717ac;
+        }
+        .my-date {
+            width: fit-content;
+            margin-left: auto;
+            text-align: end;
+        }
+        .other-date {
+            margin-right: auto;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Chat con BroadcastChannel</div>
+    <div id="chat-container"></div>
+
+    <div class="wrapper">
+        <input type="text" id="message-input" placeholder="Escribe tu mensaje">
+        <button id="send-button">Enviar</button>
+    </div>
+
+    <script   
+        src="index.js"></script>
+    </body>
+</html>
+</html>
